@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    background-color: black;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 28px;
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.lang-selector {
+    color: gray;
+}
+
+nav ul li {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+nav {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: white;
+    color: black;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-nav {
+    margin-right: 40px;
+    text-align: center;
+}
+
+.col-content {
+    min-width: 65%;
+    max-width: 65%;
+}
+
+.social {
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social img {
+    padding-right: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.contact {
+    background-color: white;
+    color: black;
+    padding-top: 60px;
+}
+
+.contact img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#portrait img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.biography {
+    background-color: rgba(49, 49, 49, 0.5);
+    padding: 15px;
+    position: relative;
+    top: -220px;
+    margin-bottom: -220px
+}
+
+.biography h1 {
+    font-size: 30px;
+}
+
+.biography p {
+    opacity: 70%;
+    font-size: 18px;
+    padding-top: 20px;
+    line-height: 2.3;
+}
+
+.page-title, .videos {
+    text-align: center;
+}
+
+.video-box p {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+    opacity: 80%;
+}
+
+.video-box {
+    margin-bottom: 20px;
+    max-width: 65%;
+    padding-left: 70px;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shop-grid div {
+    text-align: center;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 18px;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}

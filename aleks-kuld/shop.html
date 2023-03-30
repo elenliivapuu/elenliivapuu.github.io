@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Näitleja ALEKS KULD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ALEKS KULD | Näitleja</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>aleks kuld</h1>
+            <p class="lang-selector">EN / EE</p>
+        </header>
+
+        <div class="columns">
+            <div class="col-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="">background</a></li>
+                        <li><a href="">gallery</a></li>
+                        <li><a href="videos.html">videos</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <img src="img/facebook-3-32.png" alt="">
+                    <img src="img/instagram-32.png" alt="">
+                    <img src="img/youtube-6-32.png" alt="">
+                </div>
+                <div class="contact">
+                    <a href="">contact</a>
+                    <p>+372 58784739</p>
+                    <p>alekskuld@naitleja.ee</p>
+                    <img src="img/signatuur.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-content">
+                <div class="shop-header">
+                    <img src="img/käru.png" alt="" width="50px">
+                    <p class="page-title">-- shop --</p>
+                    <br>
+                </div>
+                <br>
+                <div class="shop-grid">
+                    <div>
+                        <img class="shop-item" src="img/hat.webp" alt="">
+                        <span class="price">200$</span>
+                    </div>
+                    <div>
+                        <img class="shop-item" src="img/hoodie.webp" alt="">
+                        <span class="price">500$</span>
+                    </div>
+                    <div>
+                        <img class="shop-item" src="img/tshirts.webp" alt="">
+                        <span class="price">120$</span>
+                    </div>
+                    <div>
+                        <img class="shop-item" src="img/shoes.webp" alt="">
+                        <span class="price">400$</span>
+                    </div>
+                    <div>
+                        <img class="shop-item" src="img/hoodie.webp" alt="">
+                        <span class="price">500$</span>
+                    </div>
+                    <div>
+                        <img class="shop-item" src="img/hat.webp" alt="">
+                        <span class="price">200$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+<script>
+let shopItems = document.getElementsByClassName('shop-item');
+for (let item of shopItems) {
+   item.onmouseover = function() {
+        this.nextElementSibling.style.visibility = 'visible';
+   } 
+   item.onmouseout = function() {
+        this.nextElementSibling.style.visibility = 'hidden';
+   } 
+}
+</script>
+</html>
